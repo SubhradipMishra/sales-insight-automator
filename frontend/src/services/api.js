@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = " http://localhost:5000/api/upload";
+const API_URL = "https://sales-insight-automator-26qk.onrender.com/api/upload";
 
 export const uploadSalesFile = async (file, email) => {
   const formData = new FormData();
