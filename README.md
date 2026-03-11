@@ -180,6 +180,9 @@ Utilities
 
 ## 📡 API Endpoints
 
+### Show Swagger Report
+
+GET `/api/docs`
 
 
 ### Upload Dataset
