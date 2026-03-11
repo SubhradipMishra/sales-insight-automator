@@ -5,7 +5,6 @@ export const uploadFile = async (
   req: Request,
   res: Response
 ) => {
-
   try {
 
     const email = req.body.email
@@ -23,12 +22,14 @@ export const uploadFile = async (
       result
     })
 
-  } catch (error) {
+  } catch (error: any) {
+
+    console.error("UPLOAD ERROR:", error)
 
     res.status(500).json({
-      message: "Upload failed"
+      message: "Upload failed",
+      error: error.message
     })
 
   }
-
 }
